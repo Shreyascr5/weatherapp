@@ -1,9 +1,10 @@
 import React from 'react';
-import UilReact from '@iconscout/react-unicons/icons/uil-react';
 import './index.css';
 import Inputs from './component/Inputs';
 import TopButton from './component/TopButton';
 import TimeandLocation from './component/TimeandLocation';
+import TempAndDetails from './component/TempAndDetails';
+import Forecast from './component/Forecast';
 
 export default function App() {
   return (
@@ -12,6 +13,10 @@ export default function App() {
    <Inputs/>
 
    <TimeandLocation/> 
+
+   <TempAndDetails/>
+   <Forecast title="Hourly Forecast"/>
+   <Forecast title="Daily Forecast"/>
     </div>
   )
 }
