@@ -1,5 +1,5 @@
 import { DateTime } from "luxon";
-const API_KEY = "73f8c145633daf1b79d988fcaa1cf932";
+const API_KEY = "d937447d7c9da62df5f255bfb7027459";
 const BASE_URL = "https://api.openweathermap.org/data/2.5";
 
 
@@ -43,6 +43,7 @@ const formatCurrentWeather = (data) => {
 };
 
 const formatForecastWeather = (data) => {
+    console.log(data);
   let { timezone, daily, hourly } = data;
   daily = daily.slice(1, 6).map(d => { return{
       title: formatToLocalTime(d.dt, timezone, "ccc"),
